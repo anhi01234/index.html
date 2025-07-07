@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Epic Games Store Clone</title>
+</head>
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  background-color: #202020;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.store {
+  padding: 40px;
+}
+
+.store h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  display: block;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.game-card p {
+  margin-top: 5px;
+  color: #00ffae;
+}
+
+.featured {
+  padding: 40px;
+}
+
+.featured-game {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.featured-game img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.featured-game .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-game h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.featured-game p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.featured-game button {
+  background-color: #0078f2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.details {
+  padding: 40px;
+}
+
+.details ul {
+  list-style: none;
+  line-height: 2;
+}
+
+footer {
+  background-color: #202020;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+</style>
+<body>
+  <header>
+    <div class="logo">Epic Games</div>
+    <nav>
+      <a href="#">Store</a>
+      <a href="#">News</a>
+      <a href="#">FAQ</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="store">
+    <h2>Games On Sale</h2>
+    <div class="games-grid">
+      <a class="game-card" href="games/alan-wake.html">
+        <img src="images/alan-wake.jpg" alt="Alan Wake Remastered"/>
+        <h3>Alan Wake Remastered</h3>
+        <p>₹349</p>
+      </a>
+      <a class="game-card" href="games/gta5.html">
+        <img src="images/gta5.jpg" alt="GTA V"/>
+        <h3>Grand Theft Auto V</h3>
+        <p>Free</p>
+      </a>
+      <a class="game-card" href="games/redded2.html">
+        <img src="images/redded2.jpg" alt="Red Dead Redemption 2"/>
+        <h3>Red Dead Redemption 2</h3>
+        <p>₹1,499</p>
+      </a>
+      <a class="game-card" href="games/control.html">
+        <img src="images/control.jpg" alt="Control"/>
+        <h3>Control</h3>
+        <p>₹499</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Epic Games Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
